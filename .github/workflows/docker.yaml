@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Log Node & OS Versions
         run: |
-          mode -v
+          node -v
           cat /etc/os-release
       - name: Log Env
         run: echo $API_URL
