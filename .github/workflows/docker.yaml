@@ -17,5 +17,14 @@ jobs:
           cat /etc/os-release
       - name: Log Env
         run: echo $API_URL
+      - name: Step Container
+        uses: docker://node:21.4-alpine3.18
+        with:
+          entrypoint: /usr/local/bin/node
+          args: -p 2+3
+      - name: Step Container
+        uses: docker://node:21.4-alpine3.18
+        with:
+          args: -v
 
 
