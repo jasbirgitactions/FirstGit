@@ -28,5 +28,10 @@ jobs:
         uses: docker://node:21.4-alpine3.18
         with:
           args: -v
+      - name: Show file contents
+        uses: docker://node:21.4-alpine3.18
+        with:
+          entrypoint: cat
+          args: text.txt
 
 
