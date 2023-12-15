@@ -17,6 +17,8 @@ jobs:
           cat /etc/os-release
       - name: Log Env
         run: echo $API_URL
+      - name: Create a file
+        run: echo 'Sample Text' > text.txt
       - name: Step Container
         uses: docker://node:21.4-alpine3.18
         with:
