@@ -6,7 +6,7 @@ try {
     core.warning('Warning Message');
     core.error('Error Message');
 
-    const name = core.getinput("who_to_greet");
+    const name = core.getInput("who_to_greet");
 
     console.log(`Hello ${name}`);
 
